@@ -1,14 +1,18 @@
 package com.example.proyecto_discotecas;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 
 public class HelloController {
     @FXML
-    private Label welcomeText;
+    private Button onHelloButtonClick;
 
     @FXML
-    protected void onHelloButtonClick() {
-        welcomeText.setText("Welcome to JavaFX Application!");
+    private Label welcomeText;
+
+    public void up(ActionEvent e) {
+        welcomeText.setText("Hola mundo");
     }
 }
