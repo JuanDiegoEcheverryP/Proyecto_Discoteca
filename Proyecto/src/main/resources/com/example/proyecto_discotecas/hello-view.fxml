@@ -42,7 +42,7 @@
       <HBox alignment="CENTER_LEFT" layoutX="11.0" layoutY="173.0" prefHeight="58.0" prefWidth="397.0" spacing="20.0">
          <children>
             <TextField opacity="0.93" prefHeight="25.0" prefWidth="312.0" promptText="Buscar discoteca por nombre" style="-fx-background-radius: 10px; -fx-background-color: #d6d6f2;" />
-            <Button mnemonicParsing="false" opacity="0.66" text="Buscar" />
+            <Button fx:id="botonBuscar" mnemonicParsing="false" onAction="#onActionBuscar" opacity="0.66" text="Buscar" />
          </children>
       </HBox>
       <VBox layoutY="228.0" prefHeight="585.0" prefWidth="418.0">
@@ -72,7 +72,7 @@
                   <Insets top="10.0" />
                </VBox.margin>
                <children>
-                  <Label text="LISTA DE DISCOTECAS" textFill="#d6d6f2">
+                  <Label fx:id="testLabel" text="LISTA DE DISCOTECAS" textFill="#d6d6f2">
                      <font>
                         <Font name="Comic Sans MS Bold" size="22.0" />
                      </font>
