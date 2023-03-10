@@ -1,4 +1,4 @@
-package com.example.proyecto_discotecas;
+package com.example.testconexion;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
