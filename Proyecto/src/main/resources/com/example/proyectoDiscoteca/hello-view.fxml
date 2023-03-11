@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="836.0" prefWidth="418.0" style="-fx-background-color: #27263e;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.proyectoDiscoteca.HelloController">
+    <children>
+        <Rectangle arcHeight="50.0" arcWidth="50.0" fill="#aea1e1" height="64.0" layoutX="34.0" layoutY="734.0" stroke="BLACK" strokeType="INSIDE" width="356.0" />
+        <Rectangle arcHeight="15.0" arcWidth="15.0" fill="#50475b" height="64.0" layoutX="27.0" layoutY="70.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="368.0" />
+        <TextField fx:id="campoBuscar" layoutX="60.0" layoutY="84.0" opacity="0.93" prefHeight="37.0" prefWidth="257.0" promptText="Buscar discoteca por nombre" style="-fx-background-radius: 10px; -fx-background-color: transp;">
+            <font>
+                <Font name="Corbel" size="19.0" />
+            </font>
+        </TextField>
+        <HBox alignment="CENTER" layoutY="17.0" prefHeight="58.0" prefWidth="418.0" spacing="275.0" style="-fx-background-color: 27263E;" />
+        <Button layoutX="182.0" layoutY="743.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="48.0" style="-fx-background-color: transparent;">
+            <graphic>
+            </graphic></Button>
+        <Button layoutX="291.0" layoutY="745.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="48.0" style="-fx-background-color: transparent;">
+            <graphic>
+            </graphic></Button>
+        <ButtonBar layoutX="-214.0" layoutY="442.0" prefHeight="40.0" prefWidth="200.0">
+            <buttons>
+                <Button mnemonicParsing="false" text="Button" />
+            </buttons>
+        </ButtonBar>
+        <Button layoutX="63.0" layoutY="746.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: transparent;">
+            <graphic>
+            </graphic>
+        </Button>
+        <ChoiceBox layoutX="-239.0" layoutY="231.0" prefWidth="150.0" />
+        <Button layoutX="42.0" layoutY="203.0" mnemonicParsing="false" prefHeight="114.0" prefWidth="333.0" style="-fx-background-color: #7A4BA8; -fx-background-radius: 20px; -fx-border-radius: 20px;" visible="false">
+            <graphic>
+                <GridPane prefHeight="80.0" prefWidth="295.0">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="194.0" minWidth="10.0" prefWidth="143.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="159.0" minWidth="6.0" prefWidth="152.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints maxHeight="45.0" minHeight="10.0" prefHeight="31.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="45.0" minHeight="10.0" prefHeight="27.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="36.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                    <children>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="INCÓGNITO" wrappingWidth="163.0654296875" GridPane.columnIndex="1">
+                            <font>
+                                <Font name="Tw Cen MT" size="15.0" />
+                            </font>
+                        </Text>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Cover 30k" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Cra. 14 #85-37, Bogotá" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                    </children>
+                </GridPane>
+            </graphic>
+        </Button>
+        <Button layoutX="45.0" layoutY="348.0" mnemonicParsing="false" prefHeight="114.0" prefWidth="333.0" style="-fx-background-color: #A26CD8; -fx-background-radius: 20px; -fx-border-radius: 20px;" visible="false">
+            <graphic>
+                <GridPane prefHeight="80.0" prefWidth="295.0">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="194.0" minWidth="10.0" prefWidth="143.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="159.0" minWidth="6.0" prefWidth="152.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints maxHeight="45.0" minHeight="10.0" prefHeight="31.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="45.0" minHeight="10.0" prefHeight="27.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="36.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                    <children>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="PALENQUE" wrappingWidth="163.0654296875" GridPane.columnIndex="1">
+                            <font>
+                                <Font name="Tw Cen MT" size="15.0" />
+                            </font>
+                        </Text>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Cover 20k" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Cra. 13 #82-37, Bogotá" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                    </children>
+                </GridPane>
+            </graphic>
+        </Button>
+        <Button layoutX="45.0" layoutY="505.0" mnemonicParsing="false" prefHeight="114.0" prefWidth="333.0" style="-fx-background-color: #7A4BA8; -fx-background-radius: 20px;" visible="false">
+            <graphic>
+                <GridPane prefHeight="80.0" prefWidth="295.0">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="194.0" minWidth="10.0" prefWidth="125.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="188.0" minWidth="6.0" prefWidth="188.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints maxHeight="45.0" minHeight="10.0" prefHeight="31.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="45.0" minHeight="10.0" prefHeight="27.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="36.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                    <children>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="LA CATRINA" wrappingWidth="163.0654296875" GridPane.columnIndex="1">
+                            <font>
+                                <Font name="Tw Cen MT" size="15.0" />
+                            </font>
+                        </Text>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Cover 35k" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Cra 27 #52-20, Bogotá" wrappingWidth="170.0654296875" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                    </children>
+                </GridPane>
+            </graphic>
+        </Button>
+        <Button fx:id="testLabel" layoutX="172.0" layoutY="673.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="Siguiente" textFill="WHITE">
+            <font>
+                <Font name="Corbel" size="15.0" />
+            </font>
+        </Button>
+        <Line endX="-34.0" layoutX="279.0" layoutY="704.0" startX="-100.0" stroke="WHITE" />
+      <TableView fx:id="tablaBuscar" layoutX="34.0" layoutY="189.0" prefHeight="434.0" prefWidth="341.0">
+        <columns>
+          <TableColumn fx:id="C1" prefWidth="75.0" text="C1" />
+          <TableColumn fx:id="C2" prefWidth="75.0" text="C2" />
+        </columns>
+      </TableView>
+      <ImageView fx:id="botonBuscar" fitHeight="46.0" fitWidth="54.0" layoutX="330.0" layoutY="79.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@lupa.png" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>
