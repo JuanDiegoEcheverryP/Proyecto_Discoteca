@@ -1,9 +1,9 @@
-module com.example.proyecto_discotecas {
+module com.example.testconexion {
     requires javafx.controls;
     requires javafx.fxml;
     requires java.sql;
 
 
-    opens com.example.proyecto_discotecas to javafx.fxml;
-    exports com.example.proyecto_discotecas;
+    opens com.example.proyectoDiscoteca to javafx.fxml;
+    exports com.example.proyectoDiscoteca;
 }

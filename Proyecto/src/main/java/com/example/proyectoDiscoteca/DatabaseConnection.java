@@ -1,10 +1,10 @@
-package com.example.proyecto_discotecas;
+package com.example.proyectoDiscoteca;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 
 public class DatabaseConnection {
-    public Connection databaseLink;
+    public static Connection databaseLink;
     public  Connection getConnection() {
         String databaseName = "sql9604610";
         String databaseUser = "sql9604610";
@@ -19,5 +19,13 @@ public class DatabaseConnection {
             e.getCause();
         }
         return databaseLink;
+    }
+
+    public static void desconectar() {
+        try {
+            databaseLink.close();
+        } catch (Exception e) {
+            System.out.println("Error al desconectar");
+        }
     }
 }
