@@ -66,14 +66,33 @@ public class Discoteca {
         Descripcion = descripcion;
     }
 
-    //TODO:Esto de aqui abajo y las demas clases es de andres
+   private ArrayList<Publicidad> listaPublicidad;
+    private ArrayList<Reserva> listaReservas;
+    private ArrayList<HistorialBusqueda> historialVisitas;
 
+    public ArrayList<Publicidad> getListaPublicidad() {
+        return listaPublicidad;
+    }
 
-    //private Set<Publicidad> listaPublicidad;
-    //private Set<Reserva> listaReservas;
-    //private Set<Servicio> servicios;
-    //private Set<Publicidad> publicidad;
-    //private Set<HistorialBusqueda> historialVisitas;
+    public void setListaPublicidad(ArrayList<Publicidad> listaPublicidad) {
+        this.listaPublicidad = listaPublicidad;
+    }
+
+    public ArrayList<Reserva> getListaReservas() {
+        return listaReservas;
+    }
+
+    public void setListaReservas(ArrayList<Reserva> listaReservas) {
+        this.listaReservas = listaReservas;
+    }
+
+    public ArrayList<HistorialBusqueda> getHistorialVisitas() {
+        return historialVisitas;
+    }
+
+    public void setHistorialVisitas(ArrayList<HistorialBusqueda> historialVisitas) {
+        this.historialVisitas = historialVisitas;
+    }
 
 /**
     //                          Operations
