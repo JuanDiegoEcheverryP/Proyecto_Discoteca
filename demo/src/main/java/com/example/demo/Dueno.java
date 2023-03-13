@@ -5,25 +5,14 @@ import java.util.Scanner;
 import java.util.Set;
 import java.util.HashSet;
 import java.sql.*;
-/**
-* @generated
-*/
+
 public class Dueno extends Usuario{
     
-    /**
-    * @generated
-    */
+
     private ArrayList<Discoteca> listaDiscotecas;
     
-    
-    /**
-    * @generated
-    */
     private Usuario usuario;
     
-    /**
-    * @generated
-    */
     private Set<Discoteca> discoteca;
 
     private DatabaseConnection con;
@@ -40,16 +29,10 @@ public class Dueno extends Usuario{
 
     }
 
-    /**
-    * @generated
-    */
     private ArrayList<Discoteca> getListaDiscotecas() {
         return this.listaDiscotecas;
     }
-    
-    /**
-    * @generated
-    */
+
     private ArrayList<Discoteca> setListaDiscotecas(ArrayList<Discoteca> listaDiscotecas) {
         return this.listaDiscotecas = listaDiscotecas;
     }
@@ -57,9 +40,6 @@ public class Dueno extends Usuario{
 
     //                          Operations                                  
     
-    /**
-    * @generated
-    */
     Connection cn;
     public Discoteca listarMisDiscotecas() {
         String sql="select * from Discoteca where UsuarioIdDueno ="+usuario.getIdUsuario();
@@ -83,34 +63,23 @@ public class Dueno extends Usuario{
         }
         return null;
     }
-    
-    /**
-    * @generated
-    */
+
     public boolean crearDiscoteca() {
         //TODO
         return false;
     }
     
-    /**
-    * @generated
-    */
+
     public boolean eliminarDiscoteca() {
         //TODO
         return false;
     }
-    
-    /**
-    * @generated
-    */
+
     public boolean crearPublicidad() {
         //TODO
         return false;
     }
-    
-    /**
-    * @generated
-    */
+
     public boolean eliminarPublicidad() {
         //TODO
         return false;
