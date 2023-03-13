@@ -52,7 +52,7 @@ public class Publicidad {
     }
     
     private Date setFechaInicio(Date FechaInicio) {
-        this.FechaInicio = FechaInicio;
+        return this.FechaInicio = FechaInicio;
     }
 
     private Date getFechaFinal() {
@@ -68,7 +68,7 @@ public class Publicidad {
     }
 
     private Boolean setEstado(Boolean Estado) {
-        this.Estado = Estado;
+        return this.Estado = Estado;
     }
 
     private DataType getImagen() {
